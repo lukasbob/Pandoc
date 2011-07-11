@@ -4,8 +4,10 @@
 ## Installation
 
 This assumes that you have [Pandoc][] with all its dependencies in your `PATH`.
-
-To use PDF conversion, you also need a [Tex](http://en.wikipedia.org/wiki/TeX) [distribution](http://wiki.contextgarden.net/TeX_Distributions) for your platform.
+
+To use PDF conversion, you also need a [Tex][] [distribution][] for your platform.
 
   [Pandoc]: http://johnmacfarlane.net/pandoc/
+  [Tex]: http://en.wikipedia.org/wiki/TeX
+  [distribution]: http://wiki.contextgarden.net/TeX_Distributions
 
