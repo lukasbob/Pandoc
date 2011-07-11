@@ -5,7 +5,7 @@ class TidyPandocCommand(sublime_plugin.TextCommand):
 		if self.view.file_name():
 			folder_name, file_name = os.path.split(self.view.file_name())
 
-			command = 'pandoc -f markdown -t markdown --reference-links --columns=90 ' + file_name
+			command = 'pandoc -f markdown -t markdown -p --reference-links --no-wrap ' + file_name
 
 			#Get environment variables
 			proc_env = os.environ.copy()
@@ -20,4 +20,4 @@ class TidyPandocCommand(sublime_plugin.TextCommand):
 
 			region = sublime.Region(0, self.view.size())
 
-			self.view.replace(edit, region, '\n' + result + '\n')
+			self.view.replace(edit, region, '\n' + result)
